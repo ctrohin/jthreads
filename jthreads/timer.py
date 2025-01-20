@@ -30,6 +30,10 @@ class Timer(Thread):
             raise ValueError(
                 "time and cancelPollingTime parameters must be higher than 0"
             )
+
+        if cancelPollingTime >= time:
+            raise ValueError("cancelPollingTime cannot be higher than time")
+
         self.__time = time
         self.__cancelPollingTime = cancelPollingTime
         self.__callback: Callable[[], Any] = callback
@@ -86,5 +90,6 @@ class Interval(LoopingThread):
     def loop(self) -> None:
         sleep(self.__interval)
         self.__callback()
-        
+
+
 __all__ = ["Timer", "Interval"]

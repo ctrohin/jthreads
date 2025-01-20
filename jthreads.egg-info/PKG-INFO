@@ -1,3 +1,19 @@
+Metadata-Version: 2.2
+Name: jthreads
+Version: 1.0.0
+Summary: A package providing some simple extensions of the Thread class for Python.
+Author: Cristian Trohin
+Author-email: Cristian Trohin <cristi.trohin@gmail.com>
+Project-URL: Homepage, https://github.com/ctrohin/jthreads
+Project-URL: Issues, https://github.com/ctrohin/jthreads/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+
 # jthreads
 
 jthreads is a Python library that extends on the Python Thread class by adding extra functionality such as LoopingThread, Timer, Interval, CountdownTimer and CallbackCountdownTimer.
